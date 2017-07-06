@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+{% block main %}
+<h1>topics</h1>
+<ul>
+{% for topic in topics %}
+  <li>{{ topic.title }} - {{ topic.content}}</li>
+{% else %}
+  <li>no topics</li>
+{% endfor %}
+</ul>
+{% endblock %}
